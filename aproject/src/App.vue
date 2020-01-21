@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3>{{msg}}</h3>
   </div>
 </template>
 
@@ -12,7 +13,18 @@ export default {
   name: 'app',
   components: {
     HelloWorld
-  }
+  },
+  data() {
+    return {
+      msg: '1111'
+    }
+  },
+  mounted() {
+    // eslint-disable-next-line no-console
+    console.log('1', this.msg);
+    // eslint-disable-next-line no-console
+    console.log('2', this._data.msg);
+  },
 }
 </script>
 
