@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      msg: '1111'
+      msg: '11112'
     }
   },
   mounted() {
